@@ -1,0 +1,43 @@
+1. 先运行start-p1.bat，开启并作主
+2. 运行start-p2.bat，开启并连接
+
+DEMO启动后将模拟 150ms-200ms的延迟，然后再两个窗口上移动飞
+机，观察在对方窗口上的表现。
+
+默认是完全时间同步（没有使用相位滞后），相位滞后是本体于影子
+之间保持一定距离再同步（保持车距），这样不会因为突然停住而被拉回
+
+可以按ENTER来切换两种状态
+
+
+屏幕左上显示的是PING值，右上显示的是PING历史，左下显示的是
+时间同步情况：ts(服务器时间) tc(客户端时间) dt(时间差)
+
+
+文件列表：
+
+game.py      - 主程序：影子跟随算法主逻辑
+netstream.py - 服务器网络与客户端网络类
+network.py   - 延迟模拟类
+header.py    - 消息封包/解包类
+events.py    - 消息定义
+drawing.py   - 显示功能
+npixia.py    - 图形库
+pixianew.dll - 图形库
+support      - python2.4
+
+shadow_tracing.doc - 算法说明
+运行说明.txt - 本文件
+
+start-p1.bat - 启动游戏并作主
+start-p2.bat - 启动游戏并连接
+start-p3.bat - 启动游戏并连接
+start-p4.bat - 启动游戏并连接
+
+aircraft1.gif - 飞船图片1
+aircraft2.gif - 飞船图片2
+direction.gif - 界面图片
+
+
+
+
